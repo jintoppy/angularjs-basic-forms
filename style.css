@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+input.ng-invalid{
+    border: 1px solid red;
+}
+
+.formgroup{
+    margin: 10px;
+}
+
+.formactions{
+    margin: 10px;
+    text-align: center;
+}

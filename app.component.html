@@ -1,16 +1,20 @@
 <form name="myform" novalidate>
-    <div>
+    <div class="formgroup">
+        <label for="usernameinput">Username</label>
         <input 
             type="text" 
             ng-model="username"
             minlength="3"
             name="usernameinput">
     </div>
-    <div>
+    <div class="formgroup">
+            <label for="passwordinput">Password</label>
         <input 
             type="text" 
             ng-model="password"
             name="passwordinput">
     </div>
-
+    <div class="formactions">
+            <button type="submit">Login</button>
+    </div>    
 </form>
