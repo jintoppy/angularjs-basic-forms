@@ -5,13 +5,19 @@
     <div class="formgroup">
         <label for="usernameinput">Username</label>
         <input 
+            autocomplete="off"
             type="text" 
+            my-trial-directive
             ng-model="$ctrl.username"
+            name-custom-check=""
             minlength="3"
             required
             name="usernameinput">
         <p ng-show="myform.usernameinput.$error.required">
             This field is required
+        </p>
+        <p ng-show="myform.usernameinput.$error.nameCustomCheck">
+            Cant start with letter 'a'
         </p>
         <p ng-show="myform.usernameinput.$error.minlength">
                 This requires minimum 3 characters
